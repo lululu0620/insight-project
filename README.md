@@ -6,7 +6,7 @@ Data Source: [Office of Foreign Labor Certification Performance Data](https://ww
 
 Given input data, this project can easily calculate two metrics: **Top 10 Occupations** and **Top 10 States** for **certified** visa applications.
 
-##Input data format
+## Input data format
 The input data file is .csv file with a semicolon separated (";").
 
 The first line is the names of all columns. Different input data may have different columns names. The remaining lines are the repective values.
@@ -27,7 +27,7 @@ The first line is the names of all columns. Different input data may have differ
 9;I-200-18233-239931;CERTIFIED;2018-08-21;2018-08-27;H-1B;2018-09-05;2021-09-04;"WB SOLUTIONS, LLC";;7320 E FLETCHER AVE;TAMPA;FL;33637;UNITED STATES OF AMERICA;;8133300099;;Y;"KIDAMBI, VAMAN";TRUMBULL;CT;SENIOR JAVA DEVELOPER;15-1132;"SOFTWARE DEVELOPERS, APPLICATIONS";541511.0;1;0;0;0;0;1;0;Y;104790.0;Year;Level III;OES;2018.0;OFLC ONLINE DATA CENTER;105000.0;0.0;Year;Y;N;Y;Y;;ALPHARETTA;FULTON;GA;30005;
 ```
 
-##Output data format
+## Output data format
 This project will create 2 output files:
 * `top_10_occupations.txt`: Top 10 occupations for certified visa applications
 * `top_10_states.txt`: Top 10 states for certified visa applications
@@ -65,6 +65,7 @@ For this project, I choose Python because of its convenience of reading and writ
 ## Data Process
 
 1. Semicolon
+
 The input data file has the a semicolon separated (";"), but I found that there exists semicolons which is not a separated sign in the data file.
 
 ### Example
@@ -75,6 +76,7 @@ The input data file has the a semicolon separated (";"), but I found that there 
 Therefore, we have to remove such a semicolon. They often follows "&AMP", so we can replace all "&AMP;" to ",".
 
 2. Column names
+
 Since data in different year has different format and they have different column names.
 
 To calculate two metrics described above, we need three columns: `Status`, `State`, and `Occupation`.
