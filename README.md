@@ -64,7 +64,7 @@ For this project, I choose Python because of its convenience of reading and writ
 
 ## Data Process
 
-1. Semicolon
+* Semicolon
 
 The input data file has the a semicolon separated (";"), but I found that there exists semicolons which is not a separated sign in the data file.
 
@@ -75,7 +75,7 @@ The input data file has the a semicolon separated (";"), but I found that there 
 
 Therefore, we have to remove such a semicolon. They often follows "&AMP", so we can replace all "&AMP;" to ",".
 
-2. Column names
+* Column names
 
 Since data in different year has different format and they have different column names.
 
