@@ -64,18 +64,18 @@ For this project, I choose Python because of its convenience of reading and writ
 
 ## Data Process
 
-* Semicolon
+### Semicolon
 
 The input data file has the a semicolon separated (";"), but I found that there exists semicolons which is not a separated sign in the data file.
 
-### Example
+#### Example
 ```
 ;4342279239;;ROEPER, JENNIFER;TAMPA;FL;"PRESIDENT &AMP; CHIEF EXECUTIVE OFFICER";11-1011;
 ```
 
 Therefore, we have to remove such a semicolon. They often follows "&AMP", so we can replace all "&AMP;" to ",".
 
-* Column names
+### Column names
 
 Since data in different year has different format and they have different column names.
 
