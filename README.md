@@ -95,6 +95,16 @@ If there is a new data format and new column names for these three columns, we s
 2. I defind a class called Object to store respective name and count of occupations and states.
 3. I use a heap and keep its size not exceed 10. In this case, I can find the top 10 objects in this heap with time complexity of O(nlogk).
 
+## Algorithm
+
+Find the top k elements of n objects:
+
+keep a heap with size of k, put object into the heap one by one. When the size of heap is more than k, we just pop one element.
+
+Time Complexity: O(nlogk)
+
+In this case, we want to find 10 largest elements which means k = 10. Therefore, we should build a min heap so that we can ganrantee elements in the heap are larger than others, because everytime we pop out the smallest element in the heap.
+
 ## Arguments Parse
 
 I use argparse package to parse arguments which is inputed in the command line.
@@ -109,6 +119,7 @@ I use argparse package to parse arguments which is inputed in the command line.
 ```
 ./run/sh
 ```
+You can see the output file `top_10_occupations.txt` and `top_10_states.txt` in the `output` file.
 
 ## Testing
 I put three tests in the `/insight_testsuite/tests` file.
@@ -119,3 +130,4 @@ If we want to add more tests, we can just add it to this file.
 ```
 ./run_tests/sh
 ```
+You can see the information about tests in the terminal.
