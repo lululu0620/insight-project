@@ -99,7 +99,7 @@ If there is a new data format and new column names for these three columns, we s
 
 Find the top k elements of n objects:
 
-keep a heap with size of k, put object into the heap one by one. When the size of heap is more than k, we just pop one element.
+keep a heap with size of k, put objects into the heap one by one. When the size of heap is more than k, we just pop one element.
 
 Time Complexity: O(nlogk)
 
