@@ -73,7 +73,10 @@ def getColIndex(col):
     return col_map
 
 def removeNoise(line):
-    return line.replace("&AMP;", ",")
+    """
+    Replace semicolons which is not a separate sign with another sign
+    """
+    return line.replace("&AMP;", "&")
 
 def process(f, occupation, state):
     """
