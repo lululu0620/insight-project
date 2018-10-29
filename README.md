@@ -73,7 +73,7 @@ The input data file has the a semicolon separated (";"), but I found that there 
 ;4342279239;;ROEPER, JENNIFER;TAMPA;FL;"PRESIDENT &AMP; CHIEF EXECUTIVE OFFICER";11-1011;
 ```
 
-Therefore, we have to remove such a semicolon. They often follows "&AMP", so we can replace all such semicolons to another sign.
+Therefore, we have to remove such a semicolon. They often follows "&AMP", so we can replace all such semicolons with another sign.
 
 ### Column names
 
